@@ -1,0 +1,200 @@
+.button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 100%;
+  transition: all ease 0.3s;
+	padding: 1em 1.5em;
+	border-radius: 5px;
+	font-size: 14px;
+	line-height: normal;
+	font-weight: 700!important;
+	text-transform: uppercase!important;
+	letter-spacing: 1px;
+	height: auto !important;
+
+	&:focus {
+    outline: none;
+	}
+
+	&::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    left: -6px;
+    top: -6px;
+    border-radius: 100px;
+	}
+
+  // Hide empty buttons.
+  &:not(input[type='submit']):empty {
+    display: none;
+  }
+
+	&--white-outline {
+		background-color: transparent;
+		border: 1px solid $white;
+		color: white;
+
+		&:hover,
+		&:focus,
+		&:focus-within {
+			background-color: $white;
+			color: $sade--blue;
+		}
+
+		&:focus,
+		&:focus-within {
+			&::after {
+				border: 2px dashed $white;
+			}
+		}
+	}
+
+	&--crail {
+		background-color: $sade--blue;
+		border: 1px solid $sade--blue;
+		color: white;
+
+		&:hover,
+		&:focus,
+		&:focus-within {
+			background-color: darken($color: $sade--blue, $amount: 10);
+			border-color: darken($color: $sade--blue, $amount: 10);
+		}
+
+		&:focus,
+		&:focus-within {
+			&::after {
+				border: 2px dashed $sade--blue;
+			}
+		}
+	}
+}
+
+.single_add_to_cart_button {
+	position: relative !important;
+  text-align: center !important;
+  max-width: 100% !important;
+  transition: all ease 0.3s !important;
+	padding: 10px 31px !important;
+	border-radius: 24px !important;
+	font-size: 14px !important;
+	line-height: normal !important;
+	background-color: $sade--blue !important;
+	border: 1px solid $sade--blue !important;
+	color: white;
+	display: block !important;
+	margin: 23px 0 0 !important;
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		background-color: darken($color: $sade--blue, $amount: 10) !important;
+		border-color: darken($color: $sade--blue, $amount: 10) !important;
+	}
+
+	&.button::after {
+    content: "";
+    position: static;
+    width: auto;
+    height: auto;
+    left: initial;
+    top: initial;
+    border-radius: 0;
+	}
+
+	&.loading {
+		padding: 10px 41px 10px 31px !important;
+		&:after {
+			position: absolute;
+			top: 0.69rem !important;
+			right: 0.5rem !important;
+
+		}
+	}
+}
+
+.checkout-button {
+	position: relative !important;
+  text-align: center !important;
+  max-width: 100% !important;
+  transition: all ease 0.3s !important;
+	padding: 10px 31px !important;
+	border-radius: 24px !important;
+	font-size: 14px !important;
+	line-height: normal !important;
+	background-color: $sade--blue !important;
+	border: 1px solid $sade--blue !important;
+	color: white;
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		background-color: darken($color: $sade--blue, $amount: 10) !important;
+		border-color: darken($color: $sade--blue, $amount: 10) !important;
+	}
+
+	&:focus,
+	&:focus-within {
+		&::after {
+			border: 2px dashed $sade--blue;
+		}
+	}
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+  transition: all ease 0.3s !important;
+	padding: 10px 31px !important;
+	border-radius: 24px !important;
+	font-size: 14px !important;
+	line-height: normal !important;
+	background-color: $sade--blue !important;
+	border: 1px solid $sade--blue !important;
+	color: white !important;
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		background-color: darken($color: $sade--blue, $amount: 10) !important;
+		border-color: darken($color: $sade--blue, $amount: 10) !important;
+		color: white !important;
+		outline-offset: 0 !important;
+	}
+
+	&:focus,
+	&:focus-within {
+		&::after {
+			border: none;
+		}
+	}
+}
+
+.woocommerce-page table.cart td.actions .coupon{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 1rem;
+	@media(min-width: $lap-start){
+		flex-wrap: nowrap;
+	}
+
+	.input-text {
+		width: 100%;
+		margin: 0 0 1rem 0;
+
+		@media(min-width: $lap-start){
+			width: calc(100% - 211px);
+			margin: 0 22px 0 0;
+		}
+
+		+.button {
+			width: 100%;
+			@media(min-width: $lap-start){
+				width: auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+/**
+ * Custom Gutenberg editor styles
+ * Stylesheet for small editor CSS updates.
+ */
+
+//@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Nunito:wght@400;500;600;700&display=swap');
+
+/*--------------------------------------------------------------
+# Core styles
+--------------------------------------------------------------*/
+@import 'variables';
+
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+@import 'mixins';
+
+/*--------------------------------------------------------------
+# Element resets
+--------------------------------------------------------------*/
+@import 'reset/base';
+@import 'reset/links';
+@import 'reset/tables';
+@import 'reset/text'; 
+@import 'reset/forms';
+
+
+/*--------------------------------------------------------------
+# Defaults
+--------------------------------------------------------------*/
+@import 'defaults/defaults';
+
+/*--------------------------------------------------------------
+# Utility
+--------------------------------------------------------------*/
+@import 'utility/utility';
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+@import 'sections/sections';
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import 'components/components';
+
+/*--------------------------------------------------------------
+# Gutenberg
+--------------------------------------------------------------*/
+@import 'gutenberg/gutenberg';
+
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+@import 'modules/modules';
+
+/*--------------------------------------------------------------
+# Template parts
+--------------------------------------------------------------*/
+@import 'template-parts/template-parts';
+
+// Prevents WYSIWYG's from having no editor padding.
+body {
+  margin: 8px;
+}
+
+// Makes ACF modules full width in editor.
+.wp-block {
+  max-width: 624px;
+}
+
+[data-type^='acf'],
+[data-type^='core/group'] {
+  max-width: none;
+}
+
+[data-type^='acf'] a {
+  pointer-events: none;
+}
+
+
+.break-out {
+  left: auto !important;
+  width: auto !important;
+  margin-left: 0 !important;
+}
+
+
+img.lazy {
+	opacity: 1;
+}
+
+.m02__product {
+	text-decoration: none !important;
+}
+
+body {
+	background-color: $white;
+}

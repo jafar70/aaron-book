@@ -1,0 +1,53 @@
+.m02 {
+	padding: 65px 0 25px;
+
+	@media (min-width: $lap-start) {
+		padding: 85px 0 25px;
+	}
+
+	&__title {
+		text-align: center;
+		position: relative;
+	}
+
+	&__grid {
+		margin: 50px -30px 0;
+	}
+
+	&__product {
+		width: 100%;
+		margin: 0 50px 60px;
+		text-align: center;
+		text-decoration: underline;
+
+		@media (min-width: 550px) {
+			width: calc(50% - 60px);
+			margin: 0 30px 60px;
+		}
+
+		&__img {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+
+			img {
+			}
+		}
+
+		&__title {
+			margin: 20px 0 0;
+			text-decoration-color: transparent !important;
+			transition: all ease 0.3s;
+			text-decoration: underline;
+		}
+
+		&__price {
+			margin: 5px 0 0;
+			color: $sade--blue;
+			font-weight: 600;
+			text-decoration: underline;
+			text-decoration-color: transparent;
+			transition: all ease 0.3s;
+		}
+	}
+}

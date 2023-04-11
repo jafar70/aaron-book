@@ -1,0 +1,56 @@
+.m06 {
+	background: $sade--light-crail;
+	padding: 190px 0 0;
+
+
+	&__title {
+		z-index: 2;
+		color: $white;
+		margin: 0;
+		text-align: left;
+		background-color: $sade--blue;
+		border-radius: 0 6px 6px 0;
+    border-right: 30px solid $sade--gold;
+    margin-right: 25%;
+		padding: 30px 0;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: -100%;
+			height: 100%;
+			width: 100%;
+			background-color: $sade--blue;
+			top: 0;
+		}
+	}
+
+
+	&__img {
+		position: absolute;
+		top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+		overflow: hidden;
+
+		&__media {
+			@include absolute(1);
+		}
+	}
+
+	+ .m03 {
+		@media (min-width: $desk-start) {
+			padding: 60px 0 0;
+		}
+	}
+
+	+ h1,
+	+ h2,
+	+ h3,
+	+ h4,
+	+ h5,
+	+ p {
+		margin-top: 4rem;
+	}
+}

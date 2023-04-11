@@ -1,0 +1,51 @@
+/**
+ * Variables
+ */
+
+/*---------------------------------------
+# Typography.
+----------------------------------------*/
+$font: 'Urbanist', sans-serif;
+$heading-font: 'Unna', serif;
+
+/*---------------------------------------
+# Animation & Transitions.
+----------------------------------------*/
+$transition: 0.25s;
+
+/*---------------------------------------
+# Global Colours.
+----------------------------------------*/
+$white: #FFFFFF;
+$black: #000000;
+$error: red;
+$gray:  #E6E9E6;
+
+
+/*---------------------------------------
+# Site Specific Colours.
+----------------------------------------*/
+$sade--blue: #0d43b6;
+$sade--light-crail: lighten($color: $sade--blue, $amount: 20);
+$sade--gold: #bdada0;
+$sade--gray: #666;
+$sade--dark-gray: #333;
+
+/*---------------------------------------
+# Social Media Colours.
+----------------------------------------*/
+$facebook-blue:  #3b5998;
+$twitter-blue:   #00aced;
+$linkedin-blue:  #007bb6;
+$google-red:     #dd4b39;
+$pinterest-red:  #cb2027;
+$youtube-red:    #ff0000;
+$flickr-pink:    #ff0084;
+
+
+/*---------------------------------------
+# Breakpoints.
+----------------------------------------*/
+$mobile-start: 470px;
+$lap-start:    669px;
+$desk-start:   960px;
