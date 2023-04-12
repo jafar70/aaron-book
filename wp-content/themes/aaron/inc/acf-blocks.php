@@ -151,6 +151,23 @@ function register_acf_block_types() {
 			),
 		)
 	);
+
+	acf_register_block_type(
+		array(
+			'name'            => 'logos',
+			'title'           => __( 'Logos' ),
+			'description'     => __( 'Logos block.' ),
+			'render_template' => 'modules/m08-logos.php',
+			'category'        => 'sade-blocks',
+			'icon'            => 'instagram',
+			'keywords'        => array( 'logos' ),
+			'supports'        => array(
+				'mode'     => false,
+				'align'    => false,
+				'multiple' => true,
+			),
+		)
+	);
 }
 
 // Check if function exists and hook into setup.

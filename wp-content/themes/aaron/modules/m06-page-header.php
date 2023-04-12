@@ -8,23 +8,20 @@
  * @package Jafar_Theme
  */
 
-$heading    = get_field( 'm06_title' );
-$bg_img     = get_field( 'm06_bg_img' );
-$image_attr = is_admin() ? 'src=' . $bg_img['url'] : 'data-src=' . $bg_img['url'];
+$heading = get_field( 'm06_title' );
+$leader  = get_field( 'm06_leader' );
 ?>
 
 <section class="m06 break-out" >
-		<?php if ( $heading ) : ?>
-			<div class="container">
-				<h1 class="m06__title">
-					<?php echo esc_html( $heading ); ?>
-				</h1>
-			</div>
-		<?php endif; ?>
+	<?php if ( $heading ) : ?>
+		<div class="container">
+			<h1 class="m06__title">
+				<?php echo esc_html( $heading ); ?>
+			</h1>
 
-	<?php if ( $bg_img ) : ?>
-		<div class="m06__img">
-			<img class="lazy m06__img__media object-fit" <?php echo esc_attr( $image_attr ); ?> alt="<?php echo esc_attr( $image['alt'] ); ?>">
+			<?php if ( $leader ) : ?>
+				<p class="m06__leader h4"><?php echo esc_html( $leader ); ?></p>
+			<?php endif; ?>
 		</div>
 	<?php endif; ?>
 </section>

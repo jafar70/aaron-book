@@ -17,14 +17,17 @@ $form_id = get_field( 'm05_form_id' );
 	<div class="container">
 		<div class="m05__grid flex flex-wrap justify-content--space-between">
 			<div class="m05__grid__text">
-				<?php if ( $heading ) : ?>
-					<h2 class="m05__title"><?php echo esc_html( $heading ); ?></h2>
-				<?php endif; ?>
-				<?php if ( $text ) : ?>
-					<p class="m05__text">
-						<?php echo esc_html( $text ); ?>
-					</p>
-				<?php endif; ?>
+				<div class="m05__grid__text__wrapper">
+					<?php if ( $heading ) : ?>
+						<h2 class="m05__title"><?php echo esc_html( $heading ); ?></h2>
+					<?php endif; ?>
+
+					<?php if ( $text ) : ?>
+						<p class="m05__text">
+							<?php echo esc_html( $text ); ?>
+						</p>
+					<?php endif; ?>
+				</div>
 			</div>
 
 			<div class="m05__grid__form" id="m05__form">

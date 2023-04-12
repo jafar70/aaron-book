@@ -258,3 +258,7 @@ require get_template_directory() . '/inc/block-api.php';
  */
 require get_template_directory() . '/inc/acf-options.php';
 
+/**
+ * Functions
+ */
+require get_template_directory() . '/functions/functions-image.php';

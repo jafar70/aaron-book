@@ -19,14 +19,14 @@ h1, h2, h3, h4, h5, h6,
 
 h1,
 .h1 {
-  font-size: 32px;
+  font-size: 35px;
 
 	@media (min-width: $lap-start) {
-		font-size: 40px;
+		font-size: 50px;
 	}
 
 	@media (min-width: $desk-start) {
-		font-size: 48px;
+		font-size: 75px;
 	}
 }
 
