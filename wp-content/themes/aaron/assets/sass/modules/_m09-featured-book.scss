@@ -1,0 +1,59 @@
+.m09 {
+	position: relative;
+
+	&::before {
+		@media (min-width: $lap-start) {
+			position: absolute;
+			content: "";
+			left: 0px;
+			top: 0px;
+			background: #F9F9F9;
+			background-image: linear-gradient(-86deg, #7121ff 0%, #21d4fd 100%);
+			background-size: 150% 100%;
+			opacity: .5;
+			width: 48%;
+			height: 100%;
+			border-radius: 0px 100px 100px 0px;
+			z-index: 0;
+		}
+	}
+
+	&__grid {
+		&__book {
+			width: 100%;
+			margin-bottom: 3em;
+
+			@media (min-width: $lap-start) {
+				width: 41.6666666667%;
+				margin-bottom: 0;
+			}
+
+			.image__img {
+				padding-top: 150%;
+			}
+		}
+
+		&__details {
+			width: 100%;
+
+			@media (min-width: $lap-start) {
+				width: calc(50% - 20px);
+			}
+		}
+	}
+
+	&__preheading {
+		font-family: $font;
+		letter-spacing: 2px;
+		font-weight: 600;
+	}
+
+	&__description {
+		p {
+			&:last-of-type {
+				margin-bottom: 1em !important;
+			}
+		}
+		
+	}
+}

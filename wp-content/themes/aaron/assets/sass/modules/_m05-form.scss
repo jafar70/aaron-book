@@ -1,17 +1,14 @@
 .m05 {
-	padding: 60px 0 65px;
 	background-color: $white;
-
-	@media (min-width: $lap-start) {
-		padding: 3rem 0;
-	}
 
 	&__grid {
 		&__text {
 			width: 100%;
+			margin-bottom: 2em;
 
 			@media (min-width: $desk-start) {
 				width: 35%;
+				margin-bottom: 0;
 			}
 
 			&__wrapper {

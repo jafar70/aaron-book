@@ -1,6 +1,4 @@
 .m08 {
-	margin: 5rem 0;
-
 	&__title {
 		letter-spacing: 2px;
 		font-family: $font;
@@ -14,6 +12,7 @@
 
 		&__img {
 			margin: 1em 0.5em;
+			width: auto !important;
 			.image__img {
 				max-height: 85px;
 				width: auto;

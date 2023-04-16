@@ -168,6 +168,23 @@ function register_acf_block_types() {
 			),
 		)
 	);
+
+	acf_register_block_type(
+		array(
+			'name'            => 'featured-book',
+			'title'           => __( 'Featured Book' ),
+			'description'     => __( 'Featured book block.' ),
+			'render_template' => 'modules/m09-featured-book.php',
+			'category'        => 'sade-blocks',
+			'icon'            => 'book',
+			'keywords'        => array( 'book', 'featured' ),
+			'supports'        => array(
+				'mode'     => false,
+				'align'    => false,
+				'multiple' => true,
+			),
+		)
+	);
 }
 
 // Check if function exists and hook into setup.

@@ -12,7 +12,7 @@ $heading  = get_field( 'm02_title' );
 $products = get_field( 'm02_products' );
 ?>
 
-<section class="m02 break-out">
+<section class="m02 mt mb break-out">
 	<div class="container">
 		<?php if ( $heading ) : ?>
 		<h2 class="m02__title h1"><?php echo esc_html( $heading ); ?></h2>

@@ -1,18 +1,20 @@
 .button {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  max-width: 100%;
-  transition: all ease 0.3s;
-	padding: 1em 1.5em;
-	border-radius: 5px;
-	font-size: 14px;
-	line-height: normal;
-	font-weight: 700!important;
-	text-transform: uppercase!important;
-	letter-spacing: 1px;
-	height: auto !important;
+	&:not(.wp-element-button) {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+		max-width: 100%;
+		transition: all ease 0.3s;
+		padding: 1em 1.5em;
+		border-radius: 5px;
+		font-size: 14px;
+		line-height: normal;
+		font-weight: 700!important;
+		text-transform: uppercase!important;
+		letter-spacing: 1px;
+		height: auto !important;
+	}
 
 	&:focus {
     outline: none;
@@ -25,7 +27,7 @@
     height: calc(100% + 12px);
     left: -6px;
     top: -6px;
-    border-radius: 100px;
+    border-radius: 5px;
 	}
 
   // Hide empty buttons.
@@ -69,6 +71,26 @@
 		&:focus-within {
 			&::after {
 				border: 2px dashed $sade--blue;
+			}
+		}
+	}
+
+	&--white {
+		background-color: $white;
+		border: 1px solid $white;
+		color: $sade--blue;
+
+		&:hover,
+		&:focus,
+		&:focus-within {
+			background-color: darken($color: $white, $amount: 10);
+			border-color: darken($color: $white, $amount: 10);
+		}
+
+		&:focus,
+		&:focus-within {
+			&::after {
+				border: 2px dashed $white;
 			}
 		}
 	}

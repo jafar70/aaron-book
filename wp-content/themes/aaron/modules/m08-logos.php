@@ -12,7 +12,7 @@ $heading = get_field( 'm08_heading' );
 $logos   = get_field( 'm08_logos' );
 ?>
 
-<section class="m08 break-out" >
+<section class="m08 mt mb break-out" >
 	<div class="container align-center">
 		<?php if ( $heading ) : ?>
 			<h5 class="m08__title uppercase h6">

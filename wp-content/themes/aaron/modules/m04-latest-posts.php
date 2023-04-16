@@ -12,7 +12,7 @@ $heading        = get_field( 'm04_title' );
 $featured_posts = get_field( 'm04_posts' );
 ?>
 
-<section class="m04 break-out">
+<section class="m04 mb mt break-out">
 	<div class="container">
 		<?php if ( $heading ) : ?>
 		<h2 class="m04__title"><?php echo esc_html( $heading ); ?></h2>

@@ -13,7 +13,7 @@ $text    = get_field( 'm05_text' );
 $form_id = get_field( 'm05_form_id' );
 ?>
 
-<section class="m05 break-out">
+<section class="m05 mb mt break-out">
 	<div class="container">
 		<div class="m05__grid flex flex-wrap justify-content--space-between">
 			<div class="m05__grid__text">

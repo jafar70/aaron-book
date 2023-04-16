@@ -16,7 +16,7 @@ $cta        = get_field( 'm03_link' );
 $text_order = get_field( 'm03_text_position' );
 ?>
 
-<section class="m03 break-out m03--align-<?php echo esc_html( $text_order ); ?>">
+<section class="m03 break-out mt mb m03--align-<?php echo esc_html( $text_order ); ?>">
 	<div class="container">
 		<div class="m03__grid flex flex-wrap align-items--center justify-content--space-between">
 			<div class="m03__grid__text">
